@@ -1,0 +1,65 @@
+
+
+.word-wrapper {
+	display: inline-flex;
+
+	span:not(:last-child){
+		padding-right: 27px;
+	}
+}
+
+.aboutme.container{
+	position: relative !important;
+	overflow: hidden;
+
+	transition: 0.3s ease-in-out;
+
+
+	
+
+
+	.gh-promo-container{
+		position: absolute;
+		right: 0;
+		top: 20px;
+
+		// for Mobile View
+    	// left: calc(50% - 150px);
+	}
+	.intro{
+		padding-top: 10vmax;
+		padding-bottom: 10vmax;
+		color:var(--color-secondary);
+		user-select: none;
+
+		// for Mobile View
+		// padding-top: 35vmax;
+		// padding-left : 15px;
+
+		.headLine{
+			position: relative;
+			margin-bottom: 20px;
+			font-size: 80px;
+			overflow: hidden;
+			width: fit-content;
+			.name{
+				font-weight: 700;
+				color: var(--color-primary);
+			}
+
+			.absolute-t{
+				position: absolute;
+				left: 0;
+				// display: none;
+			}
+		}
+
+		.titles{
+			font-size: 30px;
+		}
+
+		p:not(:last-child) {
+			margin-bottom: 10px;
+		}
+	}
+}

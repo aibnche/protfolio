@@ -1,0 +1,573 @@
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[11].use[5]!./src/app/style/style.scss ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+:root {
+  --color-primary:#191A20;
+  --color-secondary:#272932;
+  --color-gray:#656A81;
+  --color-light-gray:#2729321c;
+  --color-white:#FFFFFF;
+}
+
+body {
+  position: relative;
+  background-image: url("/background_pic.png");
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Comic Neue", cursive;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+input {
+  outline: none;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 300;
+}
+
+.container {
+  margin: auto;
+}
+
+/*Small devices */
+@media (min-width: 576px) {
+  .container {
+    width: 540px;
+  }
+}
+/*Medium  ---> tablets*/
+@media (min-width: 768px) {
+  .container {
+    width: 720px;
+  }
+}
+/*DEsktops*/
+@media (min-width: 992px) {
+  .container {
+    width: 960px;
+  }
+}
+/*Large Screens*/
+@media (min-width: 1200px) { /*    It mean minimum width value 12000 or above     */
+  .container {
+    width: 1140px;
+  }
+}
+/* Global scrollbar styles */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: var(--color-light-gray);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+  background: var(--color-light-gray);
+}
+/*!***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[11].use[5]!./src/components/tes/tes.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
+.ctt {
+  position: relative;
+  height: 500px;
+  margin: 5rem 0 5rem 0;
+}
+
+.ctt:after {
+  content: "";
+  position: float;
+  background-image: url("/gradient-shadow.png");
+  background-position: 0 0;
+  background-size: cover;
+  padding: 10vw;
+  text-align: center;
+  height: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* z-index: 111111; */
+  transform: translate(-50%, -50%);
+  font-size: 54px;
+  border-radius: 40px;
+  width: 50%;
+  z-index: -1;
+}
+@media (max-width: 1925px) {
+  .ctt:after {
+    width: 66%;
+  }
+}
+@media (max-width: 2350px) {
+  .ctt:after {
+    width: 60%;
+  }
+}
+@media (max-width: 1670px) {
+  .ctt:after {
+    width: 74%;
+  }
+}
+@media (max-width: 1225px) {
+  .ctt:after {
+    width: 74%;
+  }
+}
+@media (max-width: 1160px) {
+  .ctt:after {
+    width: 80%;
+  }
+}
+
+.layer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  font-family: monospace;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  position: absolute;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-family: "Bungee", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding: 0.8rem;
+  color: black;
+  text-transform: uppercase;
+  transition: transform 0.8s ease-out, color 0.8s, font-size 0.8s, box-shadow 0.8s, background-color 0.8s, border-color 0.8s, padding 0.8s;
+}
+
+.layer:after {
+  display: block;
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-image: url("/pixel-pattern-overlay.png");
+  background-size: 2px 2px;
+  background-position: 0 0;
+  background-color: rgba(0, 0, 0, 0.1294117647);
+  border-radius: 50%;
+  border: solid 1px #d9d9d9;
+}
+
+.layer:hover {
+  transform: scale(1.3) !important;
+  z-index: 112 !important;
+  cursor: pointer;
+}
+
+.hh {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  z-index: 111;
+  padding: 1rem 3rem;
+  border-radius: 5px;
+  background: white;
+  border: 1px solid;
+  border-style: dashed;
+}
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[11].use[5]!./src/components/aboutme/aboutme.scss ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.word-wrapper {
+  display: inline-flex;
+}
+.word-wrapper span:not(:last-child) {
+  padding-right: 27px;
+}
+
+.aboutme.container {
+  position: relative !important;
+  overflow: hidden;
+  transition: 0.3s ease-in-out;
+}
+.aboutme.container .gh-promo-container {
+  position: absolute;
+  right: 0;
+  top: 20px;
+}
+.aboutme.container .intro {
+  padding-top: 10vmax;
+  padding-bottom: 10vmax;
+  color: var(--color-secondary);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.aboutme.container .intro .headLine {
+  position: relative;
+  margin-bottom: 20px;
+  font-size: 80px;
+  overflow: hidden;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.aboutme.container .intro .headLine .name {
+  font-weight: 700;
+  color: var(--color-primary);
+}
+.aboutme.container .intro .headLine .absolute-t {
+  position: absolute;
+  left: 0;
+}
+.aboutme.container .intro .titles {
+  font-size: 30px;
+}
+.aboutme.container .intro p:not(:last-child) {
+  margin-bottom: 10px;
+}
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[11].use[5]!./src/components/ContactInfo/ContactInfo.scss ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.gh-promo-container.container {
+  width: 300px;
+  margin: auto;
+  margin-bottom: 103px;
+  color: var(--color-pirmary);
+}
+.gh-promo-container.container .gh-promo {
+  display: flex;
+  gap: 10px;
+  border: 1px solid var(--color-primary);
+  align-items: center;
+}
+.gh-promo-container.container .gh-promo .gh-promo-icon {
+  background: black;
+  color: white;
+  height: auto;
+  width: 25px;
+}
+.gh-promo-container.container .gh-promo p {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.gh-promo-container.container .dropdown {
+  border: 1px solid var(--color-primary);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 15px;
+}
+.gh-promo-container.container .dropdown .dropdown-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  transition: 0.3s ease;
+}
+.gh-promo-container.container .dropdown .dropdown-item:not(:first-child) {
+  cursor: pointer;
+}
+.gh-promo-container.container .dropdown .dropdown-item:hover {
+  background-color: var(--color-white);
+  border-radius: 4px;
+}
+.gh-promo-container.container .dropdown .dropdown-item .contact-info .contact-type {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  color: var(--color-gray);
+}
+/*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[11].use[5]!./src/components/careerTimeLine/careerTimeLine.scss ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.timeLine-container.container {
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  gap: 10rem;
+  padding-top: 80px;
+}
+.timeLine-container.container .sidebar {
+  width: 17.5rem;
+  overflow: hidden;
+  padding-left: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.timeLine-container.container .sidebar .year-section {
+  position: relative;
+}
+.timeLine-container.container .sidebar .year-section.line::after {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  height: 100%;
+  width: 1px;
+  background: var(--color-light-gray);
+}
+.timeLine-container.container .sidebar .year-section .year-header {
+  display: flex;
+  justify-content: space-between;
+}
+.timeLine-container.container .sidebar .year-section .project-list {
+  padding-left: 20px;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  will-change: height;
+  transition: all 180ms ease-in-out 1ms;
+  max-height: 500px;
+  transition: 0.3s;
+}
+.timeLine-container.container .sidebar .year-section .project-list.collapse {
+  max-height: 0;
+  overflow: hidden;
+}
+.timeLine-container.container .sidebar .year-section .project-list .project-item {
+  padding: 5px;
+  padding-left: 20px;
+  opacity: 0.7;
+  color: var(--color-primary);
+  border-radius: 58% 42% 53% 47%/30% 30% 70% 70%;
+  border-radius: 75% 100% 53% 47%/83% 65% 70% 70%;
+  border: 1px solid rgba(255, 255, 255, 0);
+  transition: 0.3s;
+  cursor: pointer;
+}
+.timeLine-container.container .sidebar .year-section .project-list .project-item:hover {
+  border: 1px solid var(--color-secondary);
+  opacity: 1;
+  font-weight: 600;
+}
+.timeLine-container.container .main-content {
+  position: relative;
+  height: -moz-fit-content;
+  height: fit-content;
+  transform: translateY(10px);
+  opacity: 0;
+  transition: 0.3s;
+}
+.timeLine-container.container .main-content.animate-in {
+  transform: translateY(0px);
+  opacity: 1;
+}
+.timeLine-container.container .main-content img {
+  width: 100%;
+  height: 100%;
+}
+.timeLine-container.container .main-content:hover .front-folder {
+  transform: rotateX(-38.2509deg) skewX(-8deg);
+}
+.timeLine-container.container .main-content:hover .content {
+  top: -74px;
+}
+.timeLine-container.container .main-content .content {
+  position: absolute;
+  top: 22px;
+  left: 30px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.timeLine-container.container .main-content .front-folder {
+  position: absolute;
+  top: 59px;
+  transform-origin: center bottom;
+  transition: 0.3s;
+}
+.timeLine-container.container .main-content {
+  width: 400px;
+}
+/*!***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[11].use[5]!./src/components/careerTimeLine/card.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.card-transition {
+  padding: 3px;
+  background: white;
+  border-radius: 10px;
+  position: fixed;
+  top: -1px;
+  width: 100vh;
+  height: 100vh;
+  scale: 0.9;
+}
+.card-transition .inner-container {
+  height: 100%;
+  padding: 2rem;
+  overflow-y: scroll;
+}
+.card-transition .inner-container .relative img {
+  width: 100%;
+}
+.card-transition .inner-container .outlineClose {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: end;
+}
+.card-transition .inner-container .outlineClose .icon {
+  cursor: pointer;
+}
+.card-transition .inner-container .p-6 {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+.card-transition .inner-container .p-6 h2 {
+  font-weight: 500;
+}
+.card-transition .inner-container .p-6 h3 {
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+.card-transition .inner-container .p-6 .techs .flex-wrap {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.card-transition .inner-container .p-6 .techs .flex-wrap .item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: var(--color-light-gray);
+}
+.card-transition .inner-container .p-6 .features .list-disc {
+  list-style: circle;
+  padding-left: 30px;
+}
+.card-transition .inner-container .p-6 .features .list-disc .disc {
+  line-height: 20px;
+}
+.card-transition .inner-container .p-6 .view-pro a {
+  padding: 5px 15px;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[11].use[5]!./src/components/stairs/stairs.scss ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.stair-cont {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: end;
+}
+.stair-cont .overlay {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: black;
+}
+.stair-cont .slide {
+  background-color: var(--color-primary);
+  opacity: 0.3;
+  width: 100%;
+  height: 100%;
+  z-index: 1111;
+  border-radius: 0;
+}
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[11].use[5]!./src/components/flicker/flicker.scss ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.flicker:after {
+  content: "";
+  background-image: url("/Dissolve_Noise_Texture.png");
+  height: 1000vh; /* Corrected from cal to calc */
+  width: 1000vw; /* Corrected from cal to calc */
+  position: absolute; /* Changed from fixed to absolute to stay within parent */
+  top: 0; /* Offset to center the expanded element */
+  left: 0; /* Offset to center the expanded element */
+  opacity: 0.08;
+  pointer-events: none; /* So it doesn't interfere with interactions */
+  animation: animateGrain 1s infinite;
+  z-index: 1; /* Ensure it's above the content but below interactive elements */
+}
+
+/* Make sure content inside flicker is positioned above the grain */
+.flicker > * {
+  position: relative;
+  z-index: 2;
+}
+
+.flicker {
+  position: relative;
+  overflow: hidden;
+}
+
+@keyframes animateGrain {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  10% {
+    transform: translate(-5%, -10%);
+  }
+  20% {
+    transform: translate(-15%, -20%);
+  }
+  30% {
+    transform: translate(-5%, -10%);
+  }
+  40% {
+    transform: translate(-15%, -20%);
+  }
+  50% {
+    transform: translate(-5%, -10%);
+  }
+  60% {
+    transform: translate(-15%, -20%);
+  }
+  70% {
+    transform: translate(-5%, -10%);
+  }
+  80% {
+    transform: translate(-15%, -20%);
+  }
+  90% {
+    transform: translate(-5%, -10%);
+  }
+}

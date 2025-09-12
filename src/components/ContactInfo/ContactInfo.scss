@@ -1,0 +1,54 @@
+.gh-promo-container.container{
+	width: 300px;
+    margin: auto;
+    margin-bottom: 103px;
+	color:var(--color-pirmary);
+
+	.gh-promo{
+			display: flex;
+			gap: 10px;
+			border: 1px solid var(--color-primary);
+			align-items: center;
+			.gh-promo-icon{
+				background: black;
+				color: white;
+				height: auto;
+				width: 25px;
+			}
+			p{
+				user-select: none;
+			}
+	}
+
+	.dropdown{
+		border: 1px solid var(--color-primary);
+		padding: 10px;
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		margin-top: 15px;
+
+		.dropdown-item{
+			display: flex;
+			align-items: center;
+			gap: 10px;
+			padding: 10px;
+			transition: 0.3s ease;
+			&:not(:first-child){
+				cursor: pointer;
+			}
+
+			&:hover{
+				background-color: var(--color-white);
+				border-radius: 4px;
+			}
+
+			.contact-info{
+				.contact-type{
+					user-select: none;
+					color: var(--color-gray);
+				}
+			}
+		}
+	}
+}

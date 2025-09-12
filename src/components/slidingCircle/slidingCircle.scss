@@ -1,0 +1,49 @@
+/* SlidingCircle.module.css */
+@property --factor {
+	syntax: "<number>";
+	inherits: true;
+	initial-value: 0;
+}
+
+  .slide {
+	--lines: 8;
+	--slide-height: 16rem;
+	--item-height: calc(var(--slide-height) / var(--lines));
+	--delay-basis: 0.1s;
+	width: var(--slide-height);
+	height: var(--slide-height);
+	border-radius: 50%;
+	background-size: var(--slide-height) var(--slide-height);
+	overflow: hidden;
+	isolation: isolate;
+  }
+  
+  .slide__item {
+	--factor: 0;
+	height: var(--item-height);
+	background-repeat: no-repeat;
+	background-position: center calc(var(--i) * var(--item-height) * -1);
+	background-size: var(--slide-height) var(--slide-height);
+	animation: slide 2s ease-in-out calc(var(--delay-basis) * var(--i) * -1) alternate infinite;
+  }
+  
+  .slide__item:nth-child(odd) {
+	--factor: -1;
+  }
+  
+  .slide__item:nth-child(even) {
+	--factor: 1;
+  }
+  
+  .slide:hover > .slide__item:nth-child(n) {
+	--factor: 0.5;
+  }
+  
+  @keyframes slide {
+	from {
+	  transform: translateX(calc(var(--factor) * var(--item-height) * 1));
+	}
+	to {
+	  transform: translateX(calc(var(--factor) * var(--item-height) * -1));
+	}
+  }

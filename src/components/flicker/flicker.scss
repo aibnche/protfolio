@@ -1,0 +1,38 @@
+.flicker:after {
+	content: "";
+	background-image: url("/Dissolve_Noise_Texture.png");
+	// height: 100vh; /* Corrected from cal to calc */
+	height: calc(100vh * 10); /* Corrected from cal to calc */
+	width: calc(100vw * 10); /* Corrected from cal to calc */
+	position: absolute; /* Changed from fixed to absolute to stay within parent */
+	top: 0; /* Offset to center the expanded element */
+	left: 0; /* Offset to center the expanded element */
+	opacity: 0.08;
+	pointer-events: none; /* So it doesn't interfere with interactions */
+	animation: animateGrain 1s infinite;
+	z-index: 1; /* Ensure it's above the content but below interactive elements */
+}
+
+/* Make sure content inside flicker is positioned above the grain */
+.flicker > * {
+	position: relative;
+	z-index: 2;
+}
+
+.flicker{
+	position: relative;
+	overflow: hidden;
+}
+
+@keyframes animateGrain {
+	0%, 100% { transform: translate(0, 0) }
+	10% { transform: translate(-5%, -10%) }
+	20% { transform: translate(-15%, -20%) }
+	30% { transform: translate(-5%, -10%) }
+	40% { transform: translate(-15%, -20%) }
+	50% { transform: translate(-5%, -10%) }
+	60% { transform: translate(-15%, -20%) }
+	70% { transform: translate(-5%, -10%) }
+	80% { transform: translate(-15%, -20%) }
+	90% { transform: translate(-5%, -10%) }
+}

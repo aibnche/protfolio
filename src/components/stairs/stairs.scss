@@ -1,0 +1,27 @@
+.stair-cont {
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+    display: flex;
+    justify-content: end;
+
+	.overlay{
+		width: 100vw;
+		height: 100vh;
+		position: fixed;
+		top: 0;
+		left: 0;
+		background-color: black;
+	}
+	.slide {
+		background-color: var(--color-primary);
+		opacity: 0.3;
+		width: 100%;
+		height: 100%;
+		z-index: 1111;
+		border-radius: 0;
+	}
+
+}
