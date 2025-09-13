@@ -28,7 +28,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
           {/* <Header/> */}
-          <FireMouse/>
+          {/* <FireMouse/> */}
           {children}
           <Footer/>
       </body>

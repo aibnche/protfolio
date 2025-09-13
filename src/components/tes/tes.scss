@@ -15,9 +15,12 @@
     border-radius: 1rem;
     position: relative;
     height: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .skillNav{
+    user-select: none;
     position: absolute;
     top: 10px;
     left: 10px;
@@ -31,6 +34,39 @@
 
     .skillNav-header{
         display: inherit;
+        align-items: center;
+        gap: 1rem;
+        border-right: 1px solid lightgray;
+        padding: 5px;
+
+        svg{
+            font-size: 1.8rem;
+            padding: 5px;
+            border-radius: 5px;
+            transition: 0.3s ease;
+            &:hover{
+                background: var(--color-light-gray);
+                cursor: pointer;
+            }
+        }
+    }
+
+    .tools{
+        display: flex;
+        align-items: center;
+        padding: 5px;
+        gap: 1rem;
+
+        svg{
+            font-size: 1.8rem;
+            padding: 5px;
+            border-radius: 5px;
+            transition: 0.3s ease;
+            &:hover{
+                background: var(--color-light-gray);
+                cursor: pointer;
+            }
+        }
     }
 }
 .ctt:after{

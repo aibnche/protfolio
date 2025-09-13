@@ -5,6 +5,9 @@ import './aboutme.scss'
 import ContactInfo from "@/components/ContactInfo/ContactInfo"
 import {motion} from "framer-motion"
 import Link from "next/link"
+import FireMouse from '@/components/firemouse/FireMouse'
+import { TbHandFingerLeft } from "react-icons/tb";
+
 
 const AboutMe = () => {
 	const containerRef = useRef(null);
@@ -17,8 +20,11 @@ const AboutMe = () => {
 	const dd = 5;
 	return (
 				<div className='container aboutme'>
+					<FireMouse />
 					<ContactInfo/>
 					<div className="intro">
+						<TbHandFingerLeft className='clickMe'/>
+
 						{/* ************Staggered Text************* */}
 						<motion.h1
 							className='headLine'
@@ -28,6 +34,7 @@ const AboutMe = () => {
 								staggerChildren:0.2
 							}}
 						>
+							
 							<div className='word-wrapper'>
 								{title_1.split(" ").map((l, i) => (
 									<motion.span
@@ -48,7 +55,6 @@ const AboutMe = () => {
 							</div>
 
 							{/* ---------------------- */}
-							
 							<Link href="/about" prefetch={true}>
 							<div className="absolute-t word-wrapper">
 								{title_2.split(" ").map((l, i) => (

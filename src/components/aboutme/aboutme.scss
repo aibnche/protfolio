@@ -16,7 +16,10 @@
 
 
 	
-
+	// .headLine:hover{
+	// 	padding: 1rem;
+	// 	background-color: red;
+	// }
 
 	.gh-promo-container{
 		position: absolute;
@@ -32,6 +35,14 @@
 		color:var(--color-secondary);
 		user-select: none;
 
+
+		.clickMe{
+			position: absolute;
+			top: 5rem;
+			transform: rotate(-121deg);
+			font-size: 2rem;
+			left: 0;		
+		}
 		// for Mobile View
 		// padding-top: 35vmax;
 		// padding-left : 15px;

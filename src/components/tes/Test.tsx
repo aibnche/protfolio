@@ -5,6 +5,18 @@ import Image from 'next/image';
 import './tes.scss'
 import { IoIosArrowDown } from "react-icons/io";
 import { FaUserAlt } from "react-icons/fa";
+import { CiUser } from "react-icons/ci";
+import { LuUsersRound } from "react-icons/lu";
+
+import { LuMousePointer2 } from "react-icons/lu";
+import { LuPencil } from "react-icons/lu";
+import { RxText } from "react-icons/rx";
+import { LuSticker } from "react-icons/lu";
+import { RiShapesLine } from "react-icons/ri";
+import { MdCropFree } from "react-icons/md";
+import { HiOutlineDotsHorizontal } from "react-icons/hi";
+import { LuFrame } from "react-icons/lu";
+
 
 export default function AnimatedShapes() {
   const containerRef = useRef(null);
@@ -144,7 +156,8 @@ export default function AnimatedShapes() {
           <div className="skillNav-header">
             <div className="profile-icon">
               {/* Replace with your actual icon component */}
-              <FaUserAlt/>
+              <LuUsersRound/>
+
             </div>
 
             <h2 className="skillNav-title">Skills</h2>
@@ -156,10 +169,14 @@ export default function AnimatedShapes() {
 
           {/* Tools section */}
           <div className="tools">
-            <button className="tool-btn" aria-label="Mouse tool">🖱️</button>
-            <button className="tool-btn" aria-label="Pencil tool">✏️</button>
-            <button className="tool-btn" aria-label="Text tool">🔤</button>
-            <button className="tool-btn" aria-label="More options">⋯</button>
+            <LuMousePointer2/>
+            <LuPencil/>
+            <RxText/>
+            <LuSticker/>
+            <RiShapesLine/>
+            <MdCropFree/>
+            <LuFrame/>
+            <HiOutlineDotsHorizontal/>
           </div>
         </div>
       </div>
