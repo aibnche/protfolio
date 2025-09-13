@@ -11,14 +11,24 @@
 .aboutme.container{
 	position: relative !important;
 	overflow: hidden;
-
+	padding-bottom: 5rem;
 	transition: 0.3s ease-in-out;
 
 
-	
-	// .headLine:hover{
-	// 	padding: 1rem;
-	// 	background-color: red;
+	// .headLine{
+	// 	position: relative;
+	// }
+	// .headLine::before{
+	// 	content: "";
+	// 	/* override the gradient here */
+	// 	background-image: conic-gradient(
+	// 	  #ff0052 20deg,
+	// 	  transparent 120deg
+	// 	);
+	// 	width: 150%;
+	// 	height: 150%;
+	// 	position: absolute;
+	// 	animation: rotate 2s linear infinite;
 	// }
 
 	.gh-promo-container{
@@ -36,13 +46,35 @@
 		user-select: none;
 
 
-		.clickMe{
+		.clickMe {
 			position: absolute;
-			top: 5rem;
-			transform: rotate(-121deg);
+			top: 4rem;
+			left: 3rem;
 			font-size: 2rem;
-			left: 0;		
-		}
+			transition: 0.3s ease;
+			transform: rotate(-121deg); /* initial state */
+			animation: moveHand 3s infinite ease-in-out;
+			border: 1px solid;
+			padding: 10px;
+			font-size: 4rem;
+			border-radius: 10px;
+		  }
+		  
+		  @keyframes moveHand {
+			0%, 100% {
+			  transform: rotate(-121deg) translate(5, 0);
+			}
+			25% {
+			  transform: rotate(-150deg) translate(15px, 15px);
+			}
+			50% {
+			  transform: rotate(-200deg) translate(25px, 25px);
+			}
+			75% {
+			  transform: rotate(-170deg) translate(20px, 20px);
+			}
+		  }
+		  
 		// for Mobile View
 		// padding-top: 35vmax;
 		// padding-left : 15px;
