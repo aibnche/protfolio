@@ -3,12 +3,38 @@
 
 .ctt{
 	position: relative;
-	height: 500px;
-	margin: 5rem 0 5rem 0;
+    height: 570px;
+    padding: 30px;
+    background: #bed7ff;
 }
 
+.ddd{
+    background-image: url('/eee.webp');
+    background-size: 15px;
+    background-position: center;
+    border-radius: 1rem;
+    position: relative;
+    height: 100%;
+}
+
+.skillNav{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    padding: 5px;
+    background: white;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+
+    .skillNav-header{
+        display: inherit;
+    }
+}
 .ctt:after{
-    content:"";
+    // content:"";
     position:float;
     background-image: url('/gradient-shadow.png');
     background-position: 0 0;
@@ -217,4 +243,6 @@
     background: white;
     border: 1px solid;
     border-style: dashed;
+
+    display: none;
 }

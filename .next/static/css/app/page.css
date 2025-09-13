@@ -95,12 +95,39 @@ h1, h2, h3, h4 {
 @import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
 .ctt {
   position: relative;
-  height: 500px;
-  margin: 5rem 0 5rem 0;
+  height: 570px;
+  padding: 30px;
+  background: #bed7ff;
+}
+
+.ddd {
+  background-image: url("/eee.webp");
+  background-size: 15px;
+  background-position: center;
+  border-radius: 1rem;
+  position: relative;
+  height: 100%;
+}
+
+.skillNav {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 5px;
+  background: white;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+}
+.skillNav .skillNav-header {
+  display: inherit;
 }
 
 .ctt:after {
-  content: "";
   position: float;
   background-image: url("/gradient-shadow.png");
   background-position: 0 0;
@@ -200,6 +227,7 @@ h1, h2, h3, h4 {
   background: white;
   border: 1px solid;
   border-style: dashed;
+  display: none;
 }
 /*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[11].use[5]!./src/components/aboutme/aboutme.scss ***!

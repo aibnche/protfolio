@@ -3,6 +3,8 @@
 import { useEffect, useState, useRef } from 'react';
 import Image from 'next/image';
 import './tes.scss'
+import { IoIosArrowDown } from "react-icons/io";
+import { FaUserAlt } from "react-icons/fa";
 
 export default function AnimatedShapes() {
   const containerRef = useRef(null);
@@ -133,7 +135,35 @@ export default function AnimatedShapes() {
         zIndex: '111',
       }}>Technologies</h1>
       
-      <div
+
+
+
+      <div className='ddd'>
+        <div className="skillNav">
+          {/* Header section */}
+          <div className="skillNav-header">
+            <div className="profile-icon">
+              {/* Replace with your actual icon component */}
+              <FaUserAlt/>
+            </div>
+
+            <h2 className="skillNav-title">Skills</h2>
+
+              {/* Replace with arrow icon */}
+              <IoIosArrowDown/>
+            
+          </div>
+
+          {/* Tools section */}
+          <div className="tools">
+            <button className="tool-btn" aria-label="Mouse tool">🖱️</button>
+            <button className="tool-btn" aria-label="Pencil tool">✏️</button>
+            <button className="tool-btn" aria-label="Text tool">🔤</button>
+            <button className="tool-btn" aria-label="More options">⋯</button>
+          </div>
+        </div>
+      </div>
+      {/* <div
         className="ddd"
 
         ref={containerRef}
@@ -143,27 +173,29 @@ export default function AnimatedShapes() {
           width: '100%', 
           height: '100%', 
         }}
-      />
+      /> */}
       {
-        languages.map((lang, index) => {
-          const randomTop = getRandomInt(0, 80);
-          const randomLeft = getRandomInt(20, 70);
-          const randomRight = 20;
-          return (<pre
-            className={`im${index+1} layer`}
-            key={index}
-            ref={(el : any) => (particlesRef.current[index] = el)}
-            style={{
-              top: `${randomTop}%`,
-              left: `${randomLeft}%`,
-              right: `${randomRight}%`
-            }}
-            >
-            {lang}
-            </pre>)
-        }
+
+
+        // languages.map((lang, index) => {
+        //   const randomTop = getRandomInt(0, 80);
+        //   const randomLeft = getRandomInt(20, 70);
+        //   const randomRight = 20;
+        //   return (<pre
+        //     className={`im${index+1} layer`}
+        //     key={index}
+        //     ref={(el : any) => (particlesRef.current[index] = el)}
+        //     style={{
+        //       top: `${randomTop}%`,
+        //       left: `${randomLeft}%`,
+        //       right: `${randomRight}%`
+        //     }}
+        //     >
+        //     {lang}
+        //     </pre>)
+        // }
           
-        )
+        // )
 
       }
     </div>

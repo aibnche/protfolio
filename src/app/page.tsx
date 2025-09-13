@@ -23,11 +23,11 @@ export default function Home() {
     <main>
       <Flicker>
         <AboutMe/>
+      </Flicker>
         <Test/>
         <CareerTimeLine/>
         {/* <FireMouse/> */}
         {/* <Stairs/> */}
-      </Flicker>
     </main>
   );
 }
