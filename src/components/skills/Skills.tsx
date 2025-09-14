@@ -37,6 +37,7 @@ export default function AnimatedShapes() {
     { top: "10%", left: "40%", rotate: "17deg", lang: "C++" , img: "/pinned-notes.png" },
     { top: "10%", left: "80%", rotate: "17deg", lang: "C" , img: "/stickynote.png" },
     { top: "70%", left: "10%", rotate: "17deg", lang: "Css" , img: "/sticky-noteee.png" },
+    { top: "70%", left: "80%", rotate: "17deg", lang: "Docker" , img: "/docker-sticky.png" },
   ]
   // Image paths - replace these with your actual image paths
   const images = [

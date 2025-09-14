@@ -13,6 +13,14 @@
 	z-index: 1; /* Ensure it's above the content but below interactive elements */
 }
 
+.flicker:has(.loader) {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  }
+
+  
 /* Make sure content inside flicker is positioned above the grain */
 .flicker > * {
 	position: relative;
@@ -24,11 +32,16 @@
 	overflow: hidden;
 
 	.loader{
-		height: 100vh !important;
-		display: flex !important;
-		align-items: center;
-		justify-content: center;
-		width: 100% !important;
+		position: absolute;
+		transform: translate(-50%, -50%);
+		top: 50%;
+		left: 50%;
+		border-bottom: 20px solid #e21716 !important;
+		// height: 100vh !important;
+		// display: flex !important;
+		// align-items: center;
+		// justify-content: center;
+		// width: 100% !important;
 	}
 }
 

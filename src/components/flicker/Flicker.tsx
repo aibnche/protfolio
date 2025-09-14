@@ -1,7 +1,7 @@
 "use client"
 import React, { useEffect, useState } from 'react'
 import "./flicker.scss"
-import { HashLoader } from "react-spinners";
+import { SkewLoader } from "react-spinners";
 
 
 
@@ -16,7 +16,7 @@ const Flicker = ({children}:any) => {
 	return (
 		<div className="flicker">
 			{
-				isLoading ?  <HashLoader className="loader" color="#191a20" /> : children
+				isLoading ?  <SkewLoader className="loader" color="#191a20" /> : children
 			}
 		</div>
 	)
