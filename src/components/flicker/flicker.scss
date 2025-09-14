@@ -22,6 +22,14 @@
 .flicker{
 	position: relative;
 	overflow: hidden;
+
+	.loader{
+		height: 100vh !important;
+		display: flex !important;
+		align-items: center;
+		justify-content: center;
+		width: 100% !important;
+	}
 }
 
 @keyframes animateGrain {
@@ -36,3 +44,5 @@
 	80% { transform: translate(-15%, -20%) }
 	90% { transform: translate(-5%, -10%) }
 }
+
+

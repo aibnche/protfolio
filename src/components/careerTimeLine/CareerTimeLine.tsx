@@ -12,93 +12,158 @@ const list = [
 	{title:"fetchr app", },
 ]
 
-const lists = [
-    {
-		id: '2024',
-		title: 'First List',
-		items: [
-			{
-				title:'Fetchr App',
-				image:'https://www.robertkan.com/images/projectCard/fetchr.svg',
-				overview: "A modern application for pet owners to schedule walks and connect with local service providers.",
-				technologies: ["React Native 1", "Node.js", "MongoDB", "AWS"],
-				Key_Features: [
-					"Real-time scheduling and tracking",
-					"Secure payment processing",
-					"In-app messaging",
-					"Rating and review system"
-				]
 
-			},
-			{
-				title:'LinkedIn Brand Kit',
-				image:'https://www.robertkan.com/images/projectCard/linkedin.svg',
-				overview: "A modern application for pet owners to schedule walks and connect with local service providers.",
-				technologies: ["React Native 2", "Node.js", "MongoDB", "AWS"],
-				Key_Features: [
-					"Real-time scheduling and tracking",
-					"Secure payment processing",
-					"In-app messaging",
-					"Rating and review system"
-				]
-			},
-			{
-				title:'SearchNEU Alerts',
-				image:'https://www.robertkan.com/images/projectCard/searchneu.svg',
-				overview: "A modern application for pet owners to schedule walks and connect with local service providers.",
-				technologies: ["React Native 3", "Node.js", "MongoDB", "AWS"],
-				Key_Features: [
-					"Real-time scheduling and tracking",
-					"Secure payment processing",
-					"In-app messaging",
-					"Rating and review system"
-				]
-			}
-		]
-    },
-    {
-		id: '2023',
-		title: 'Second List',
-		items:[
-			{
-				title:'Fetchr App 1',
-				image:'https://www.robertkan.com/images/projectCard/fetchr.svg',
-				overview: "A modern application for pet owners to schedule walks and connect with local service providers.",
-				technologies: ["React Native 4", "Node.js", "MongoDB", "AWS"],
-				Key_Features: [
-					"Real-time scheduling and tracking",
-					"Secure payment processing",
-					"In-app messaging",
-					"Rating and review system"
-				]
-			},
-			{
-				title:'LinkedIn Brand Kit 2',
-				image:'https://www.robertkan.com/images/projectCard/linkedin.svg',
-				overview: "A modern application for pet owners to schedule walks and connect with local service providers.",
-				technologies: ["React Native 5", "Node.js", "MongoDB", "AWS"],
-				Key_Features: [
-					"Real-time scheduling and tracking",
-					"Secure payment processing",
-					"In-app messaging",
-					"Rating and review system"
-				]
-			},
-			{
-				title:'SearchNEU Alerts 3',
-				image:'https://www.robertkan.com/images/projectCard/searchneu.svg',
-				overview: "A modern application for pet owners to schedule walks and connect with local service providers.",
-				technologies: ["React Native 6", "Node.js", "MongoDB", "AWS"],
-				Key_Features: [
-					"Real-time scheduling and tracking",
-					"Secure payment processing",
-					"In-app messaging",
-					"Rating and review system"
-				]
-			}
-		]
-    }
-];
+const lists = [
+	{
+	  id: 'JS',
+	  title: 'JavaScript / Fullstack Projects',
+	  items: [
+		{
+		  title: 'Admin Dashboard',
+		  image: '/images/projects/admin_dashboard.svg', // replace with your actual path
+		  overview: 'A responsive admin dashboard built with HTML5 and Sass, featuring clean UI components and modular styling.',
+		  technologies: ['HTML5', 'Sass'],
+		  Key_Features: [
+			'Responsive layout design',
+			'Reusable Sass mixins & variables',
+			'Custom theming support',
+			'Optimized for modern browsers'
+		  ]
+		},
+		{
+		  title: 'Comment System',
+		  image: '/images/projects/comment_system.svg',
+		  overview: 'An advanced MERN stack comment system with nested replies and YouTube-like features for interaction.',
+		  technologies: ['MongoDB', 'Express.js', 'React', 'Node.js'],
+		  Key_Features: [
+			'Nested comments & replies',
+			'Like/Dislike functionality',
+			'Real-time updates',
+			'Authentication & user management'
+		  ]
+		},
+		{
+		  title: 'CRUD Inventory (Next.js)',
+		  image: '/images/projects/crud_inventory.svg',
+		  overview: 'An inventory management system built with Next.js and Prisma ORM for efficient database handling.',
+		  technologies: ['Next.js', 'Prisma', 'TypeScript'],
+		  Key_Features: [
+			'Create, Read, Update, Delete inventory items',
+			'Prisma ORM with type-safe queries',
+			'API routes for data management',
+			'Responsive UI design'
+		  ]
+		}
+	  ]
+	},
+	{
+	  id: 'C++',
+	  title: 'C++ / Systems Programming',
+	  items: [
+		{
+		  title: 'WebServ',
+		  image: '/webserve.jpeg',
+		  overview: 'WebServ is an advanced, production-grade HTTP server implementation designed to showcase sophisticated network programming techniques and web server architecture.',
+		  technologies: ['C++', 'Networking', 'HTTP'],
+		  Key_Features: [
+			'Full HTTP/1.1 support',
+			'Efficient socket & request handling',
+			'Configurable server architecture',
+			'Scalable & optimized for performance'
+		  ]
+		}
+	  ]
+	}
+  ];
+  
+
+// const lists = [
+//     {
+// 		id: '2024',
+// 		title: 'First List',
+// 		items: [
+// 			{
+// 				title:'Fetchr App',
+// 				image:'https://www.robertkan.com/images/projectCard/fetchr.svg',
+// 				overview: "A modern application for pet owners to schedule walks and connect with local service providers.",
+// 				technologies: ["React Native 1", "Node.js", "MongoDB", "AWS"],
+// 				Key_Features: [
+// 					"Real-time scheduling and tracking",
+// 					"Secure payment processing",
+// 					"In-app messaging",
+// 					"Rating and review system"
+// 				]
+
+// 			},
+// 			{
+// 				title:'LinkedIn Brand Kit',
+// 				image:'https://www.robertkan.com/images/projectCard/linkedin.svg',
+// 				overview: "A modern application for pet owners to schedule walks and connect with local service providers.",
+// 				technologies: ["React Native 2", "Node.js", "MongoDB", "AWS"],
+// 				Key_Features: [
+// 					"Real-time scheduling and tracking",
+// 					"Secure payment processing",
+// 					"In-app messaging",
+// 					"Rating and review system"
+// 				]
+// 			},
+// 			{
+// 				title:'SearchNEU Alerts',
+// 				image:'https://www.robertkan.com/images/projectCard/searchneu.svg',
+// 				overview: "A modern application for pet owners to schedule walks and connect with local service providers.",
+// 				technologies: ["React Native 3", "Node.js", "MongoDB", "AWS"],
+// 				Key_Features: [
+// 					"Real-time scheduling and tracking",
+// 					"Secure payment processing",
+// 					"In-app messaging",
+// 					"Rating and review system"
+// 				]
+// 			}
+// 		]
+//     },
+//     {
+// 		id: 'C++',
+// 		title: 'Second List',
+// 		items:[
+// 			{
+// 				title:'Fetchr App 1',
+// 				image:'https://www.robertkan.com/images/projectCard/fetchr.svg',
+// 				overview: "A modern application for pet owners to schedule walks and connect with local service providers.",
+// 				technologies: ["React Native 4", "Node.js", "MongoDB", "AWS"],
+// 				Key_Features: [
+// 					"Real-time scheduling and tracking",
+// 					"Secure payment processing",
+// 					"In-app messaging",
+// 					"Rating and review system"
+// 				]
+// 			},
+// 			{
+// 				title:'LinkedIn Brand Kit 2',
+// 				image:'https://www.robertkan.com/images/projectCard/linkedin.svg',
+// 				overview: "A modern application for pet owners to schedule walks and connect with local service providers.",
+// 				technologies: ["React Native 5", "Node.js", "MongoDB", "AWS"],
+// 				Key_Features: [
+// 					"Real-time scheduling and tracking",
+// 					"Secure payment processing",
+// 					"In-app messaging",
+// 					"Rating and review system"
+// 				]
+// 			},
+// 			{
+// 				title:'SearchNEU Alerts 3',
+// 				image:'https://www.robertkan.com/images/projectCard/searchneu.svg',
+// 				overview: "A modern application for pet owners to schedule walks and connect with local service providers.",
+// 				technologies: ["React Native 6", "Node.js", "MongoDB", "AWS"],
+// 				Key_Features: [
+// 					"Real-time scheduling and tracking",
+// 					"Secure payment processing",
+// 					"In-app messaging",
+// 					"Rating and review system"
+// 				]
+// 			}
+// 		]
+//     }
+// ];
 
 const CareerTimeLine = () => {
 
