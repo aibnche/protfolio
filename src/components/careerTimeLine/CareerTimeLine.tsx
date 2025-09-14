@@ -12,7 +12,7 @@ const list = [
 	{title:"fetchr app", },
 ]
 
-
+//     filter: grayscale(100%);
 const lists = [
 	{
 	  id: 'JS',
