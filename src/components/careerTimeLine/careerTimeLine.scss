@@ -7,6 +7,10 @@
     // background-color: beige;
     padding-top: 80px;
 
+	@media (max-width: 768px) {
+		height: fit-content;
+		padding-bottom: 8rem;
+  	}
 	.all-projects{
 		padding-left: 2rem;
 		padding-right: 2rem;
@@ -15,6 +19,7 @@
 		flex-direction: column;
 		gap: 2rem;
 		.project{
+			cursor: pointer;
 			display: flex;
 			gap: 0.5rem;
 			align-items: center;

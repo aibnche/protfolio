@@ -80,7 +80,7 @@ const AboutMe = () => {
 						
 						<p className='titles'>Currently → <strong>Student at 42 School</strong></p>
 						<p className='titles'>Exploring → <strong>Full-Stack Development | DevOps | Mobile Apps</strong></p>
-						<p className='titles'>Building → <strong>Personal Projects & Open Source Contributions</strong></p>
+						<p className='titles'>Building → <strong>Personal Projects & Contributions</strong></p>
 					</div>
 				</div>
 	)

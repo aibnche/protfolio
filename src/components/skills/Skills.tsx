@@ -159,7 +159,7 @@ export default function AnimatedShapes() {
   const jsss = "JS";
 
   return (
-    <div className="container ctt">
+    <div className="ctt">
       <img src="/skills.png" alt="" className="background-image"/>
       <div className="ddd">
         <div className="skillNav">
