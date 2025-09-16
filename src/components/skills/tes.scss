@@ -8,6 +8,123 @@
     background: var(--color-primary);
     border-radius: 1rem;
     margin-bottom: 10rem;
+
+    .background-image{
+        // background-image: url('/skills.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        width: 100%;
+        border-radius: 1rem;
+        border: 0.4rem solid;
+        display: none;
+
+
+
+    }
+
+    @media (max-width: 992px) {
+        & {
+            height: 510px;
+        }
+    }
+    
+    @media (max-width: 1290px) {
+        &{
+            .ddd{
+                display: none;
+                // height: 400px;
+                // margin-bottom: 5rem;
+            }
+            .background-image{
+                display: block;
+            }
+            
+            height: 515px;
+            padding: 0;
+            // margin-left: 1rem;
+            // margin-right: 1rem;
+            // width: 96%;
+        }
+    }
+    @media (max-width: 1199px) {
+        & {
+            height: 435px;
+        }
+    }
+    @media (max-width: 991px) {
+        & {
+            height: 328px;
+            margin-left: 1rem;
+            margin-right: 1rem;
+            width: 97%;
+        }
+    }
+    
+    @media (max-width: 750px) {
+        & {
+            height: 165px;
+            margin-left: 0.5rem;
+            margin-right: 0.5rem;
+            width: 94%;
+            background: transparent;
+            // border: 1rem solid var(--color-primary);
+            border-radius: 1.5rem;
+            // margin-left: 0.5rem;
+            // margin-right: 0.5rem;
+            // width: 94%;
+        }
+    }
+
+        /* Mobile (<=480px) */
+    @media (max-width: 480px) {
+        & {
+            height: 182px;
+            margin-left: 0.5rem;
+            margin-right: 0.5rem;
+            margin-bottom: 2rem;
+            width: 94%;
+            background: transparent;
+            // border: 1rem solid var(--color-primary);
+            border-radius: 1.5rem;
+        }
+    }
+    @media (max-width: 375px) {
+        & {
+            height: 165px;
+            // margin-left: 0.5rem;
+            // margin-right: 0.5rem;
+            // width: 94%;
+        }
+    }
+    
+    /* Small tablets (481px–768px) */
+    @media (min-width: 481px) and (max-width: 768px) {
+        .popup {
+        max-height: 80vh;
+        }
+    }
+    
+    /* Tablets / small laptops (769px–1024px) */
+    @media (min-width: 769px) and (max-width: 1024px) {
+        .popup {
+        max-height: 85vh;
+        }
+    }
+    
+    /* Desktops (1025px–1200px) */
+    @media (min-width: 1025px) and (max-width: 1200px) {
+        .popup {
+        max-height: 90vh;
+        }
+    }
+    
+    /* Large screens (>1200px) */
+    @media (min-width: 1201px) {
+        .popup {
+        max-height: 90vh;   /* usually enough for desktop */
+        }
+    }
 }
 
 .ddd{
@@ -314,36 +431,3 @@
 	cursor: pointer;
 }
 
-// .hh{
-//     background-image: url('/gradient-shadow.png');
-//     background-position: 0 0;
-//     background-size: cover;
-//     padding: 10vw;
-//     text-align: center;
-//     height: 50%;
-//     position: absolute;
-//     top: 50%;
-//     left: 50%;
-//     /* z-index: 111111; */
-//     transform: translate(-50%, -50%);
-//     font-size: 50px;
-//     border-radius: 40px;
-//     width: 50%;
-//     z-index: -1;
-// }
-
-.hh{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 50px;
-    z-index: 111;
-    padding: 1rem 3rem;
-    border-radius: 5px;
-    background: white;
-    border: 1px solid;
-    border-style: dashed;
-
-    display: none;
-}

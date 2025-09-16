@@ -172,7 +172,7 @@ const lists = [
 const CareerTimeLine = () => {
 
 	const [cardToggle, setCard] = useState(false)
-	const [currentCard, setCurrentCard] = useState({})
+	const [currentCard, setCurrentCard] = useState(lists[0].items[0])
 	const [toggleList, setToggleList] = useState("2024")
 	const [imageUrl, setImageUrl] = useState("https://www.robertkan.com/images/projectCard/fetchr.svg")
 	const [viewAll, setViewAll] = useState(true)
@@ -180,38 +180,36 @@ const CareerTimeLine = () => {
 		setToggleList(toggleList === listId ? null : listId);
 	};
 
+	const showCard = (item:any) =>{
+		setCurrentCard(item);
+		setCard(true)
+	}
 	
 	const mainContainer = useRef(null)
 	var keyy = 0;
 	return (
 	// <Flicker>
 		<div className="timeLine-container container">
-			
-			
-			<section className='all-projects'>
-			{
-				
-  lists.map((list, index) => (
-	
-	  
-	  list.items.map((item, i) => {
-		keyy += 1;
-		return <div className="project" key={keyy}>
-			{/* <div className="project-item" key={`${list.id}-${i}`}> */}
-				<span className="projects-text">{`00${keyy}`}</span>
-				<span className="projects-text">{item.title}</span>
-				<div className="separator"></div>
-				<span className="projects-type">{list.id}</span>
-			{/* </div> */}
-		</div>
-})
-  ))
-}
 
+			<div className='all-projects mobile-only'>
+			{	
+				lists.map((list, index) => (
+					list.items.map((item, i) => {
+						keyy += 1;
+						return <div className="project" key={keyy + index} onClick={()=> showCard(item)}>
+							{/* <div className="project-item" key={`${list.id}-${i}`}> */}
+								<span className="projects-text">{`00${keyy}`}</span>
+								<span className="projects-text">{item.title}</span>
+								<div className="separator"></div>
+								<span className="projects-type">{list.id}</span>
+							{/* </div> */}
+						</div>
+					})
+				))
+			}
+			</div>
 
-			</section>
-
-			<div className={`sidebar ${viewAll ? 'hide' : ''}`}>
+			<div className={`sidebar desktop-only`}>
 				{
 					lists.map((list)=>(
 						<div className={`year-section ${toggleList == list.id ? "line" : ""}`} key={list.id}>
@@ -251,17 +249,17 @@ const CareerTimeLine = () => {
 					<span className="view-all-icon">→</span>
 				</div>
 			</div>
-		
-			<div className={`${viewAll ? 'hide' : ''}`}>
+
+			<div className={`desktop-only`}>
 
 			<MainContent imageUrl={imageUrl} setCard={setCard}/>
+			</div>
 			{
 				cardToggle && 
 				<Strais>
 					<Card setCard={setCard} imageUrl={imageUrl} currentCard={currentCard}/>
 				</Strais>
 			}
-			</div>
 			
 
 

@@ -159,21 +159,8 @@ export default function AnimatedShapes() {
   const jsss = "JS";
 
   return (
-    <div className="ctt">
-      <h1
-        className="hh"
-        style={{
-          position: "absolute",
-          top: "50%",
-          left: "50%",
-          transform: "translate(-50%, -50%)",
-          fontSize: "50px",
-          zIndex: "111",
-        }}
-      >
-        Technologies
-      </h1>
-
+    <div className="container ctt">
+      <img src="/skills.png" alt="" className="background-image"/>
       <div className="ddd">
         <div className="skillNav">
           {/* Header section */}
@@ -224,37 +211,7 @@ export default function AnimatedShapes() {
           ))
         }
       </div>
-      {/* <div
-        className="ddd"
 
-        ref={containerRef}
-        onMouseMove={parallax}
-        onMouseLeave={reset_parallax}
-        style={{ 
-          width: '100%', 
-          height: '100%', 
-        }}
-      /> */}
-      {
-        // languages.map((lang, index) => {
-        //   const randomTop = getRandomInt(0, 80);
-        //   const randomLeft = getRandomInt(20, 70);
-        //   const randomRight = 20;
-        //   return (<pre
-        //     className={`im${index+1} layer`}
-        //     key={index}
-        //     ref={(el : any) => (particlesRef.current[index] = el)}
-        //     style={{
-        //       top: `${randomTop}%`,
-        //       left: `${randomLeft}%`,
-        //       right: `${randomRight}%`
-        //     }}
-        //     >
-        //     {lang}
-        //     </pre>)
-        // }
-        // )
-      }
     </div>
   );
 }
