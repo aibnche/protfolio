@@ -77,7 +77,26 @@ const lists = [
 		  projectUrl: 'https://github.com/Terex881/WebServ-42'
 		}
 	  ]
-	}
+	},
+	{
+	  id: 'Docker',
+	  title: 'Inception Project',
+	  items: [
+		{
+		  title: 'Inception',
+		  image: '/docker_pic.png',
+		  overview: 'Inception is a comprehensive project that simulates the deployment and management of containerized applications using Docker, showcasing skills in container orchestration, networking, and system architecture.',
+		  technologies: ["Docker", "Containers", "Linux", "Networking"],
+		  Key_Features: [
+			"Container orchestration and management",
+			"Efficient image building and layering",
+			"Network configuration and linking between containers",
+			"Volume management and persistent storage"
+		  ],
+		  projectUrl: 'https://github.com/inception_'
+		}
+	  ]
+	},
   ];
   
 
@@ -174,7 +193,7 @@ const CareerTimeLine = () => {
 	const [cardToggle, setCard] = useState(false)
 	const [currentCard, setCurrentCard] = useState(lists[0].items[0])
 	const [toggleList, setToggleList] = useState("2024")
-	const [imageUrl, setImageUrl] = useState("https://www.robertkan.com/images/projectCard/fetchr.svg")
+	const [imageUrl, setImageUrl] = useState(lists[0].items[0].image)
 	const [viewAll, setViewAll] = useState(true)
 	const togglingList = (listId:any) => {
 		setToggleList(toggleList === listId ? null : listId);
@@ -244,10 +263,10 @@ const CareerTimeLine = () => {
 				}
 			
 			
-				<div className="view-all">
+				{/* <div className="view-all">
 					<span>VIEW ALL</span>
 					<span className="view-all-icon">→</span>
-				</div>
+				</div> */}
 			</div>
 
 			<div className={`desktop-only`}>

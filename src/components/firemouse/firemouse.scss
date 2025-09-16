@@ -6,6 +6,9 @@
 	height: 100vh;
 	z-index: 9999;
 	pointer-events: none; // So it doesn't interfere with clicking
+	@media (max-width: 480px) {
+		display: none !important;
+	}
   }
   
   .circle {

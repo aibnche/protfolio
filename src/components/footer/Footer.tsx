@@ -17,7 +17,7 @@ const Footer = () => {
 					</li>
 
 					<li>
-						<a href="mailto:therobkan@gmail.com" className="link" target="_blank">
+						<a href="mailto:achrafibncheikh@gmail.com" className="link" target="_blank">
 							MAIL
 						</a>
 					</li>
@@ -27,7 +27,7 @@ const Footer = () => {
 					
 					
 					<li>
-						<a href="https://www.linkedin.com/in/robertkkan/" className="link" target="_blank">
+						<a href="https://www.linkedin.com/in/" className="link" target="_blank">
 							LINKEDIN
 						</a>
 					</li>
@@ -36,7 +36,7 @@ const Footer = () => {
 					</li>
 
 					<li>
-						<a href="https://github.com/robkkan" className="link" target="_blank">
+						<a href="https://github.com/achrafato" className="link" target="_blank">
 							GITHUB
 						</a>
 					</li>

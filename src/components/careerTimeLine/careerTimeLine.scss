@@ -52,7 +52,7 @@
 		height: fit-content;
 
 		.year-section{
-
+			overflow: hidden;
 			position: relative;
 
 			&.line::after{
