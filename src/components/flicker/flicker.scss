@@ -5,8 +5,7 @@
 	height: calc(100vh * 10); /* Corrected from cal to calc */
 	width: calc(100vw * 10); /* Corrected from cal to calc */
 	position: absolute; /* Changed from fixed to absolute to stay within parent */
-	top: 0; /* Offset to center the expanded element */
-	left: 0; /* Offset to center the expanded element */
+	inset: 0;
 	opacity: 0.08;
 	pointer-events: none; /* So it doesn't interfere with interactions */
 	animation: animateGrain 1s infinite;
@@ -18,25 +17,31 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-  }
+
+	.loader{
+		border-bottom: 20px solid #e21716 !important;
+	}
+}
 
   
 /* Make sure content inside flicker is positioned above the grain */
 .flicker > * {
 	position: relative;
 	z-index: 2;
+
 }
 
 .flicker{
 	position: relative;
 	overflow: hidden;
 
+
 	.loader{
-		position: absolute;
-		transform: translate(-50%, -50%);
-		top: 50%;
-		left: 50%;
-		border-bottom: 20px solid #e21716 !important;
+		// position: absolute !important;
+		// transform: translate(-50%, -50%) !important;
+		// top: 50% !important;
+		// left: 50% !important;
+		// border-bottom: 20px solid #e21716 !important;
 		// height: 100vh !important;
 		// display: flex !important;
 		// align-items: center;
