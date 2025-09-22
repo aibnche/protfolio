@@ -1,11 +1,8 @@
 "use client";
 
-import { useEffect, useState, useRef } from "react";
-import Image from "next/image";
+import React from "react";
 import "./tes.scss";
 import { IoIosArrowDown } from "react-icons/io";
-import { FaUserAlt } from "react-icons/fa";
-import { CiUser } from "react-icons/ci";
 import { LuUsersRound } from "react-icons/lu";
 
 import { LuMousePointer2 } from "react-icons/lu";
@@ -16,16 +13,8 @@ import { RiShapesLine } from "react-icons/ri";
 import { MdCropFree } from "react-icons/md";
 import { HiOutlineDotsHorizontal } from "react-icons/hi";
 import { LuFrame } from "react-icons/lu";
-import { rotate } from "three/tsl";
-import { img } from "framer-motion/client";
 
 export default function AnimatedShapes() {
-  const containerRef = useRef(null);
-  const [windowSize, setWindowSize] = useState({ width: 0, height: 0 });
-  const particlesRef = useRef<any[]>([]);
-  const animationRef = useRef(null);
-
-  const containerHeight = 500;
 
   const stciks = [
     { top: "15%", left: "10%", rotate: "-10deg", lang: "NodeJs" , img: "/sticky-note.png" },
@@ -37,130 +26,12 @@ export default function AnimatedShapes() {
     { top: "10%", left: "40%", rotate: "17deg", lang: "C++" , img: "/pinned-notes.png" },
     { top: "10%", left: "80%", rotate: "17deg", lang: "C" , img: "/stickynote.png" },
     { top: "70%", left: "10%", rotate: "17deg", lang: "Css" , img: "/sticky-noteee.png" },
-    { top: "70%", left: "80%", rotate: "17deg", lang: "Docker" , img: "/docker-sticky.png" },
+        { top: "70%", left: "80%", rotate: "17deg", lang: "Docker" , img: "/docker-sticky.png" },
   ]
-  // Image paths - replace these with your actual image paths
-  const images = [
-    "/_c.svg",
-    "/_c++.svg",
-    "/_css_css3_icon.svg",
-    "/_github-logo.svg",
-    "/_graphql.svg",
-    "/_html_icon.svg",
-    "/_java_language_icon.svg",
-    "/_javascript_language_icon.svg",
-    "/_mongodb.svg",
-    "/_next.svg",
-    "/_nodejs_icon.svg",
-    "/_react_icon.svg",
-    "/_sass_icon.svg",
-    "/_spring-boot.svg",
-    "/_json.svg",
-  ];
-
-  const languages: string[] = [
-    "c",
-    "c++",
-    "css",
-    "github",
-    "graphql",
-    "html",
-    "java",
-    "js",
-    "mongodb",
-    "nextjs",
-    "nodejs",
-    "reactjs",
-    "sass",
-    "springboot",
-    "json",
-  ];
-
-  // function moveParticle(particle:any) {
-  //   particle.x += particle.vx;
-  //   particle.y += particle.vy;
-
-  //   if (particle.x < 0 || particle.x > windowSize.width - particle.radius) {
-  //     particle.vx = -particle.vx;
-  //   }
-  //   if (particle.y < 0 || particle.y > containerHeight - particle.radius) {
-  //     particle.vy = -particle.vy;
-  //   }
-
-  //   particle.div.style.left = `${particle.x}px`;
-  //   particle.div.style.top = `${particle.y}px`;
-  //   particle.div.style.transform = `rotate(${particle.y}deg)`;
-
-  //   return particle;
-  // }
-
-  // function animate() {
-  //   particlesRef.current.forEach((particle, index) => {
-  //     particlesRef.current[index] = moveParticle(particle);
-  //   });
-  //   animationRef.current = requestAnimationFrame(animate);
-  // }
-
-  // Throttle function
-  const throttle = (func, limit) => {
-    let inThrottle;
-    return function () {
-      const args = arguments;
-      const context = this;
-      if (!inThrottle) {
-        func.apply(context, args);
-        inThrottle = true;
-        setTimeout(() => (inThrottle = false), limit);
-      }
-    };
-  };
-
-  const parallax = throttle((event: any) => {
-    particlesRef.current.forEach((particle) => {
-      const multiplier = 0.05;
-
-      const x = (windowSize.width - event.pageX * 2) * multiplier;
-      const y = (windowSize.height - event.pageY * 2) * multiplier;
-
-      // Use translate3d for GPU-accelerated animation
-      particle.style.transform = `translate3d(${x}px, ${y}px, 0)`;
-    });
-  }, 16);
-
-  const reset_parallax = (e) => {
-    particlesRef.current.forEach((particle) => {
-      particle.style.transform = `translateX(${0}px) translateY(${0}px)`;
-    });
-  };
-
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      setWindowSize({
-        width: window.innerWidth,
-        height: containerHeight,
-      });
-
-      const handleResize = () => {
-        setWindowSize({
-          width: window.innerWidth,
-          height: containerHeight,
-        });
-      };
-
-      window.addEventListener("resize", handleResize);
-      return () => window.removeEventListener("resize", handleResize);
-    }
-  }, []);
-
-  function getRandomInt(min, max) {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-  }
-
-  const jsss = "JS";
 
   return (
     <div className="ctt">
-      <img src="/skills.png" alt="" className="background-image"/>
+      <img src="/skills.png" alt="Skills background" className="background-image"/>
       <div className="ddd">
         <div className="skillNav">
           {/* Header section */}

@@ -1,13 +1,22 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { AiOutlineClose } from "react-icons/ai";
 import "./card.scss"
 import {UserContext} from '@/context/context'
 
-const Card = ({setCard ,imageUrl, currentCard}:any) => {
+interface CardProps {
+	setCard: (value: boolean) => void;
+	imageUrl: string;
+	currentCard: {
+		image: string;
+		title: string;
+		overview: string;
+		technologies: string[];
+		Key_Features: string[];
+		projectUrl: string;
+	};
+}
 
-	const clickRedirection = (url:string) => {
-		window.open(url, '_blank');
-	}
+const Card = ({setCard, currentCard}: CardProps) => {
 
 	const context = React.useContext(UserContext);
 
@@ -49,9 +58,9 @@ const Card = ({setCard ,imageUrl, currentCard}:any) => {
 					<h3 className="text-lg font-medium mb-2">Technologies</h3>
 					<div className="flex-wrap">
 						{
-							currentCard?.technologies.map((tech:any, index:number) => (
+							currentCard?.technologies.map((tech: string, index: number) => (
 								<span className="item" key={index}>
-									<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-code mr-1">
+									<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-code mr-1">
 									<polyline points="16 18 22 12 16 6"></polyline>
 									<polyline points="8 6 2 12 8 18"></polyline>
 									</svg>
@@ -67,7 +76,7 @@ const Card = ({setCard ,imageUrl, currentCard}:any) => {
 					<h3 className="text-lg font-medium mb-2">Key Features</h3>
 					<ul className="list-disc">
 						{
-							currentCard.Key_Features.map((feature:any, index:number) => (
+							currentCard.Key_Features.map((feature: string, index: number) => (
 								<li className="disc" key={index}>{feature}</li>
 							))
 						}

@@ -1,9 +1,8 @@
 "use client"
 
-import React, { useEffect, useRef } from 'react'
+import React from 'react'
 import './aboutme.scss'
 import ContactInfo from "@/components/ContactInfo/ContactInfo"
-import Flicker from "@/components/flicker/Flicker"
 import {motion} from "framer-motion"
 
 

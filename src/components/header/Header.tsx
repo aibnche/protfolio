@@ -1,6 +1,6 @@
 "use client"
 import React from 'react'
-import header from './header.scss'
+import './header.scss'
 import Flicker from '@/components/flicker/Flicker'
 
 const Header = () => {

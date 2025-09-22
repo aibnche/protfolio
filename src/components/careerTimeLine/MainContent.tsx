@@ -1,20 +1,28 @@
 "use client"
 import React, {useEffect, useRef} from 'react'
 
-const MainContent = ({imageUrl, setCard}:any) => {
-	// const {imageUrl} = params
+interface MainContentProps {
+	imageUrl: string;
+	setCard: (value: boolean) => void;
+}
 
-	const mainContainer = useRef(null)
+const MainContent = ({imageUrl, setCard}: MainContentProps) => {
+
+	const mainContainer = useRef<HTMLDivElement>(null)
 
 	useEffect(()=>{
 
 		// console.log("***********")
 		// console.log(imageUrl)
 		// console.log("***********")
-		mainContainer.current.classList.remove('animate-in');
-		setTimeout(()=>{
-			mainContainer.current.classList.add('animate-in');
-		},1000)
+		if (mainContainer.current) {
+			mainContainer.current.classList.remove('animate-in');
+			setTimeout(()=>{
+				if (mainContainer.current) {
+					mainContainer.current.classList.add('animate-in');
+				}
+			},1000)
+		}
 
 
 	},[imageUrl])
@@ -22,7 +30,7 @@ const MainContent = ({imageUrl, setCard}:any) => {
 	return (
 		<div className="main-content" ref={mainContainer}>
 				<div className="back-folder w-full h-full">
-					<img src='/folder.svg'/>
+					<img src='/folder.svg' alt="Folder icon"/>
 				</div>
 				
 
@@ -31,7 +39,7 @@ const MainContent = ({imageUrl, setCard}:any) => {
 					<a className="block w-full mx-auto">
 						<div className="w-full h-full relative">
 							<img
-								alt="Mockup of the project titled &quot;Linkedin Brand Kit&quot;"
+								alt="Project screenshot"
 								loading="eager"
 								width="525"
 								height="390"
@@ -49,7 +57,7 @@ const MainContent = ({imageUrl, setCard}:any) => {
 
 				
 				<div className="front-folder bottom-[0] w-full z-10">
-					<img src='/folderFront.svg'/>
+					<img src='/folderFront.svg' alt="Folder front icon"/>
 				</div>
 
 			</div>

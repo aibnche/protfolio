@@ -1,19 +1,11 @@
 "use client"
-import React, { useState, useRef } from 'react'
+import React, { useState } from 'react'
 import "./careerTimeLine.scss"
 import { FaChevronUp } from "react-icons/fa";
 import { FaChevronDown } from "react-icons/fa6";
-import { FaArrowRightLong } from "react-icons/fa6";
 import MainContent from './MainContent'
-import Flicker from "@/components/flicker/Flicker"
 import Card from "./Card"
 import Strais from "@/components/stairs/Stairs"
-
-const list = [
-	{title:"fetchr app", },
-]
-
-
 
 const lists = [
 	{
@@ -192,28 +184,34 @@ const CareerTimeLine = () => {
 
 	const [cardToggle, setCard] = useState(false)
 	const [currentCard, setCurrentCard] = useState(lists[0].items[0])
-	const [toggleList, setToggleList] = useState("2024")
+	const [toggleList, setToggleList] = useState<string | null>("2024")
 	const [imageUrl, setImageUrl] = useState(lists[0].items[0].image)
-	const [viewAll, setViewAll] = useState(true)
-	const togglingList = (listId:any) => {
+
+	const togglingList = (listId: string) => {
 		setToggleList(toggleList === listId ? null : listId);
 	};
 
-	const showCard = (item:any) =>{
+	const showCard = (item: {
+		title: string;
+		image: string;
+		overview: string;
+		technologies: string[];
+		Key_Features: string[];
+		projectUrl: string;
+	}) =>{
 		setCurrentCard(item);
 		setCard(true)
 	}
 	
-	const mainContainer = useRef(null)
-	var keyy = 0;
+	let keyy = 0;
 	return (
 	// <Flicker>
 		<div className="timeLine-container container">
 
 			<div className='all-projects mobile-only'>
 			{	
-				lists.map((list, index) => (
-					list.items.map((item, i) => {
+				lists.map((list) => (
+					list.items.map((item, index) => {
 						keyy += 1;
 						return <div className="project" key={keyy + index} onClick={()=> showCard(item)}>
 							{/* <div className="project-item" key={`${list.id}-${i}`}> */}

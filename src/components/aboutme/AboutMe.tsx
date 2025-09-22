@@ -5,7 +5,6 @@ import './aboutme.scss'
 import ContactInfo from "@/components/ContactInfo/ContactInfo"
 import {motion} from "framer-motion"
 import Link from "next/link"
-import FireMouse from '@/components/firemouse/FireMouse'
 import { TbHandFingerLeft } from "react-icons/tb";
 
 const AboutMe = () => {
@@ -16,7 +15,6 @@ const AboutMe = () => {
 	const STAGGER = 0.025;
 	return (
 				<div className='container aboutme'>
-					<FireMouse />
 					<ContactInfo/>
 					<div className="intro">
 						<TbHandFingerLeft className='clickMe'/>

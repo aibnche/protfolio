@@ -1,9 +1,14 @@
 import React from 'react'
 
-const page = ({params}:{params:{id:string}}) => {
+interface PageProps {
+	params: Promise<{id: string}>;
+}
+
+const page = async ({params}: PageProps) => {
+	const {id} = await params;
 	return (
 		<div>
-			{params.id}
+			{id}
 		</div>
 	)
 }
