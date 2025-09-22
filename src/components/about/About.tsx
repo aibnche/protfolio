@@ -26,7 +26,7 @@ const About = () => {
 				
 				<div className="pic">
 					<SlidingCircle 
-						imageUrl="/profile_pic.png" 
+						imageUrl="/profile_pic.jpeg" 
 						lines={20} 
 					/>
 				</div>

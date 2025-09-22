@@ -55,7 +55,7 @@ const AboutMe = () => {
 							</div>
 
 							{/* ---------------------- */}
-							<Link href="/about" prefetch={true}>
+							<Link href="/about">
 							<div className="absolute-t word-wrapper">
 								{title_2.split(" ").map((l, i) => (
 									<motion.span

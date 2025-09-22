@@ -8,7 +8,7 @@ const Footer = () => {
 			<footer className="footer">
 				<ul className="flex flex-wrap justify-center">
 					<li>
-						<a href="" className="link" target="_blank">
+						<a href="/resume.pdf" className="link" target="_blank">
 							RESUME
 						</a>
 					</li>
