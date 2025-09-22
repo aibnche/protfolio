@@ -37,13 +37,7 @@ const AnimatedText = ({ text, className = "" }) => {
 
 
 const AboutMe = () => {
-	const containerRef = useRef(null);
-	const requestRef = useRef();
-	const previousMousePosition = useRef({ x: 0, y: 0 });
-
-	const children = "Hi, this is Ashraf"
-	const DURATION = 0.25;
-	const STAGGER = 0.025;
+	// ...existing code...
 	return (
 			// <Flicker>
 				<div className='container aboutme'>

@@ -3,7 +3,7 @@ import './stairs.scss'
 import {motion, AnimatePresence} from "framer-motion"
 import { UserProvider } from '@/context/context'
 
-const Stairs = ({children}:any) => {
+const Stairs = ({children}: React.ReactNode) => {
 	const [delay, setDelay] = useState(true)
 	const n_divs = 6
 

@@ -22,8 +22,7 @@ export default function Home() {
 
       </Flicker>
       
-        {/* <FireMouse/> */}
-        {/* <Stairs/> */}
+  {/* ...existing code... */}
     </main>
   );
 }
