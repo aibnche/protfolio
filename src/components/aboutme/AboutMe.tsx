@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useEffect, useRef } from 'react'
+import React from 'react'
 import './aboutme.scss'
 import ContactInfo from "@/components/ContactInfo/ContactInfo"
 import {motion} from "framer-motion"
@@ -8,16 +8,12 @@ import Link from "next/link"
 import FireMouse from '@/components/firemouse/FireMouse'
 import { TbHandFingerLeft } from "react-icons/tb";
 
-
 const AboutMe = () => {
-	const containerRef = useRef(null);
-	const previousMousePosition = useRef({ x: 0, y: 0 });
 
 	const title_1 = "Hi, this is Ashraf"
 	const title_2 = "About me"
 	const DURATION = 0.25;
 	const STAGGER = 0.025;
-	const dd = 5;
 	return (
 				<div className='container aboutme'>
 					<FireMouse />

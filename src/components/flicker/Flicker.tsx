@@ -5,7 +5,7 @@ import { SkewLoader } from "react-spinners";
 
 
 
-const Flicker = ({children}:any) => {
+const Flicker = ({children}: { children: React.ReactNode }) => {
 	const [isLoading, setIsLoading] = useState(true);
 
 	useEffect(() => {
