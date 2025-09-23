@@ -1,6 +1,7 @@
 .flicker:after {
 	content: "";
 	background-image: url("/Dissolve_Noise_Texture.png");
+	background-repeat: repeat;
 	// height: 100vh; /* Corrected from cal to calc */
 	height: calc(100vh * 10); /* Corrected from cal to calc */
 	width: calc(100vw * 10); /* Corrected from cal to calc */
