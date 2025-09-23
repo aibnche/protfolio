@@ -1,6 +1,5 @@
 import React from 'react'
 import "./footer.scss"
-import Flicker from "@/components/flicker/Flicker"
 
 const Footer = () => {
 	return (
