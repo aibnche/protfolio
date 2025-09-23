@@ -205,7 +205,6 @@ const CareerTimeLine = () => {
 	
 	let keyy = 0;
 	return (
-	// <Flicker>
 		<div className="timeLine-container container">
 
 			<div className='all-projects mobile-only'>
@@ -282,7 +281,6 @@ const CareerTimeLine = () => {
 
 			
 		</div>
-	// </Flicker>
 
 	)
 }

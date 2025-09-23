@@ -1,15 +1,16 @@
 .flicker:after {
 	content: "";
 	background-image: url("/Dissolve_Noise_Texture.png");
-	background-repeat: repeat;
 	// height: 100vh; /* Corrected from cal to calc */
 	height: calc(100vh * 10); /* Corrected from cal to calc */
 	width: calc(100vw * 10); /* Corrected from cal to calc */
 	position: absolute; /* Changed from fixed to absolute to stay within parent */
 	inset: 0;
-	opacity: 0.08;
+	opacity: 1.5%;
 	pointer-events: none; /* So it doesn't interfere with interactions */
 	animation: animateGrain 1s infinite;
+	background-repeat: no-repeat; /* No repeat to avoid gaps */
+	background-size: 100% 100%; /* Stretch the image to fill the container */
 	z-index: 1; /* Ensure it's above the content but below interactive elements */
 }
 
@@ -36,32 +37,20 @@
 	position: relative;
 	overflow: hidden;
 
-
-	.loader{
-		// position: absolute !important;
-		// transform: translate(-50%, -50%) !important;
-		// top: 50% !important;
-		// left: 50% !important;
-		// border-bottom: 20px solid #e21716 !important;
-		// height: 100vh !important;
-		// display: flex !important;
-		// align-items: center;
-		// justify-content: center;
-		// width: 100% !important;
-	}
 }
 
 @keyframes animateGrain {
 	0%, 100% { transform: translate(0, 0) }
-	10% { transform: translate(-5%, -10%) }
-	20% { transform: translate(-15%, -20%) }
-	30% { transform: translate(-5%, -10%) }
-	40% { transform: translate(-15%, -20%) }
-	50% { transform: translate(-5%, -10%) }
-	60% { transform: translate(-15%, -20%) }
-	70% { transform: translate(-5%, -10%) }
-	80% { transform: translate(-15%, -20%) }
-	90% { transform: translate(-5%, -10%) }
+	10% { transform: translate(-2%, -4%) }
+	20% { transform: translate(-8%, -10%) }
+	30% { transform: translate(-2%, -4%) }
+	40% { transform: translate(-8%, -10%) }
+	50% { transform: translate(-2%, -4%) }
+	60% { transform: translate(-8%, -10%) }
+	70% { transform: translate(-2%, -4%) }
+	80% { transform: translate(-8%, -10%) }
+	90% { transform: translate(-2%, -4%) }
+
 }
 
 

@@ -4,7 +4,7 @@ import Flicker from "@/components/flicker/Flicker"
 
 const Footer = () => {
 	return (
-		<Flicker>
+		// <Flicker>
 			<footer className="footer">
 				<ul className="flex flex-wrap justify-center">
 					<li>
@@ -42,7 +42,6 @@ const Footer = () => {
 					</li>
 				</ul>
 			</footer>
-		</Flicker>
 	)
 }
 
