@@ -26,7 +26,7 @@ const Footer = () => {
 					
 					
 					<li>
-						<a href="https://www.linkedin.com/in/achraf-ibn-cheikh-636498247/" className="link" target="_blank">
+						<a href="https://www.linkedin.com/in/achraf-ibn-cheikh" className="link" target="_blank">
 							LINKEDIN
 						</a>
 					</li>

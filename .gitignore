@@ -5,6 +5,8 @@
 /.next
 /out
 
+.next
+
 # Local env files
 .env
 .env.local

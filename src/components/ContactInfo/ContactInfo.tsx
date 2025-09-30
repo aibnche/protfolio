@@ -11,7 +11,7 @@ import './ContactInfo.scss'
 
 const ContactInfo = () => {
 	
-	const email = "aibnche713@gmail.com"
+	const email = "achrafibncheikh@gmail.com"
 	const handleEmailClick = () => {
 		window.location.href = `mailto:${email}`;
 	};
@@ -37,7 +37,7 @@ const ContactInfo = () => {
 			<div className="dropdown-item">
 				<FaPhoneAlt className="icon-circle phone-icon"/>
 				<div className="contact-info">
-					<span className="contact-value">+359-89-886-6090</span>
+					<span className="contact-value">+212723482982</span>
 					<span className="contact-type">— Phone</span>
 				</div>
 			</div>

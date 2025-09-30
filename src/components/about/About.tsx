@@ -20,7 +20,7 @@ const About = () => {
 				
 				<p>My tech journey started at <strong>OFPPT</strong>, with a passion for problem-solving through code. Now I&apos;m leveling up at <strong>42 School</strong>&apos;s peer-driven learning environment – surviving the infamous &quot;piscine&quot; and embracing the grind</p>
 				
-				<p>I thrive where logic meets creativity. Whether it&apos;s architecting a full-stack app or tweaking animations until they <em>feel</em> just right, I love the process as much as the result.</p>
+				<p>I thrive where logic meets creativity. Whether it&apos;s architecting a full-stack app or tweaking animations until they <em>feel</em> just right,<br></br> I love the process as much as the result.</p>
 				
 				<p>Let&apos;s connect! I&apos;m always open to collaborating on wild ideas or debating React vs NextJs over coffee.</p>
 				
